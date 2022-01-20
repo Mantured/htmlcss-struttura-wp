@@ -15,18 +15,15 @@ main{
     margin-bottom: 10px;
 }
 
-.float-left{
-    float:left;
-}
-
-.container-head, .container-main, .container-footer{
-    /* padding: 20px; */
-}
 
 .clearfix::after{
     content: "";
-    display: table;
-    clear: both;
+    display: table; 
+    clear: both; /* * non permette che vi siano altri elementi floattanti a sinistra o a destra del elemento  */
+}
+
+.float-left{
+    float:left;
 }
 
 .head{
@@ -79,3 +76,17 @@ main{
 .azzurrino{
     background-color: rgba(171,207,231,255);
 }
+
+
+/* reset e clearfix */
+
+/* .container-head, .container-main, .container-footer{
+/*     tutti i continer devono essere margin 0 auto  con una max width 850 height 600 */
+
+/* section top menu heght  140px e colore margin 1rem 0*/
+/* seection jumbotron colore hight 500px  margin-bottom 1rem*/
+/* section content, gli diamo un colore  margin bottom  5rem*/
+/* section #content > (figlio diretto)header guarda che tu avrai una serie di elementi al tuo interno quindi ti darò una dimensione 30px */
+/* section#content aside e article 300px margin 1rem 0 e colore  float left  */
+/* section#content aside width 20% section#content article calc (60% - 2rem ) margin 1rem */
+/* footer grande 50/40px sfondo colore viola  */
